@@ -1,0 +1,78 @@
+.hub {
+  position: relative;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+
+  &__content {
+    width: 100%;
+    //margin-top: -150px;
+  }
+
+  &__motto {
+    text-align: center;
+    opacity: 0.6;
+
+    @media (min-width: $screen-sm) {
+      text-align: left;
+    }
+  }
+
+  &__goal-name {
+    text-align: center;
+    font-size: 35px;
+    padding: 0 50px;
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-sm) {
+      text-align: left;
+      font-size: 47px;
+      padding: 0;
+    }
+  }
+
+  &__separator {
+    max-width: 25px;
+    margin: 0 auto;
+  }
+
+  &__motto-small {
+    display: none;
+    text-align: center;
+
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+    }
+  }
+
+  &__motto-small-heading {
+    margin: 5px 0;
+  }
+
+  &__progress-titles {
+    margin-top: 70px;
+  }
+
+  &__balance {
+    line-height: 1.5;
+  }
+
+  &__total {
+    font-size: 18px;
+  }
+
+  &__progress-line {
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+  }
+
+  &__to-target {
+    font-size: 18px;
+    margin-top: 10px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}

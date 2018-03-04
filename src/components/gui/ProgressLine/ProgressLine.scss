@@ -1,0 +1,57 @@
+.progress-line {
+  background: white;
+  border-bottom: 1px solid $color-concrete;
+
+  &__element {
+    width: 0;
+    height: 5px;
+    background: $color-rhino-secondary;
+    transition: width .9s $easeOutBack;
+  }
+
+// Specific modifiers ---------------------------
+
+  &--fixed {
+    position: fixed;
+    top: $header-height;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+// Background modifiers -------------------------
+
+  &--bg-grey {
+    .progress-line__element {
+      background: #E6E6E6;
+    }
+  }
+
+  &--bg-white {
+    .progress-line__element {
+      background: white;
+    }
+  }
+
+  &--dotted {
+    position: relative;
+    background: transparent;
+    border: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border-bottom: 1.5px dashed #F6F6F6;
+    }
+
+    .progress-line__element {
+      position: relative;
+      background: white;
+      z-index: 2;
+    }
+  }
+}

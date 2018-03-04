@@ -1,0 +1,33 @@
+.hub-arrow {
+  overflow: hidden;
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  background-image: url('/assets/images/hub/arrow.png');
+  background-size: contain;
+  background-position: center;
+  animation-name: hubArrowAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.hub-arrow:hover {
+  transform: scale(1.2);
+}
+
+@keyframes hubArrowAnimation {
+    0% {
+      bottom: 50px;
+    }
+    50% {
+      bottom: 45px;
+    }
+    100% {
+      bottom: 50px;
+    }
+}

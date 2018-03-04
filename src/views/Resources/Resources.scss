@@ -1,0 +1,67 @@
+.resources {
+  margin: 45px 0 35px;
+
+  @media (min-width: $screen-sm) {
+    margin: 135px 0 70px;
+  }
+
+  @media (min-width: $screen-md) {
+    margin: 180px 0 145px;
+  }
+
+// Main section ---------------------------------
+
+// Options section ------------------------------
+
+  &__options-section {
+    margin-top: 110px;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 155px;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: 170px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-right: -16px;
+    }
+
+    @media (max-width: $screen-xs) {
+      .heading--size-3 {
+        padding: 0 16px;
+      }
+
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+  }
+
+  &__option {
+    padding: 0 8px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  // Common
+  &__hero-image {
+    .image {
+      height: 145px;
+
+      @media (min-width: $screen-sm) {
+        height: 200px;
+      }
+
+      @media (min-width: $screen-md) {
+        height: 260px;
+      }
+    }
+  }
+}

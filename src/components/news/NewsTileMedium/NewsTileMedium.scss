@@ -1,0 +1,33 @@
+.news-tile-md {
+  $radius: 15px;
+
+  .news-tile {
+    height: 190px;
+
+    &__image,
+    &__tile {
+      @media (min-width: $screen-md) {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    &__image {
+      @media (min-width: $screen-md) {
+        width: 30%;
+      }
+    }
+
+    &__tile {
+      @media (min-width: $screen-md) {
+        max-width: 69%;
+        margin: 0;
+        border-radius: 0 $radius $radius 0;
+      }
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+}

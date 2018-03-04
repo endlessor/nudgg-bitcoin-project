@@ -1,0 +1,65 @@
+.partners-popup {
+  $cross-size: 15px;
+  $heading-h: 165px;
+
+  position: relative;
+
+  &__image {
+    width: auto;
+    height: 35px;
+    margin: 0 auto;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 0;
+    }
+  }
+
+  &__website-link {
+    text-align: center;
+    margin-top: 10px;
+
+    @media (min-width: $screen-sm) {
+      text-align: left;
+    }
+  }
+
+  &__btn-account {
+    margin-top: 20px;
+  }
+
+  &__heading {
+    max-height: 130px;
+  }
+
+  &__content {
+    padding: 20px;
+    max-height: calc(#{$window-height-full} - 165px);
+
+    @media (min-width: $screen-xs) {
+      max-height: calc(#{$window-height-d} - 165px);
+    }
+
+    @media (min-width: $screen-sm) {
+      padding: 30px 70px;
+      max-height: calc(#{$window-height-d} - 130px);
+    }
+  }
+
+  &__paragraph-section {
+    ~ .partners-popup__paragraph-section {
+      margin-top: 25px;
+    }
+  }
+
+  &__heading {
+    font-size: 14px;
+  }
+
+  &__paragraph {
+    padding-left: 10px;
+  }
+}
+
+.scrollable {
+  overflow-y: scroll;
+}

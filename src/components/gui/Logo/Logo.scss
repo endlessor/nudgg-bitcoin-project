@@ -1,0 +1,31 @@
+.logo {
+  $logo-green: '../assets/images/logos/logo-green.svg';
+  $logo-white: '../assets/images/logos/logo-white.svg';
+  $logo-black: '../assets/images/logos/logo-black.svg';
+
+  width: 60px;
+  height: 25px;
+  background-image: url($logo-green);
+
+// Specific modifiers ---------------------------
+
+  &--white {
+    background-image: url($logo-white);
+  }
+
+  &--black {
+    background-image: url($logo-black);
+  }
+
+  .body--no-touch & {
+    &:hover {
+      animation: nudgg 1s cubic-bezier(.36, .07, .19, .97) both;
+    }
+  }
+
+  &--no-anim {
+    &:hover {
+      animation: none;
+    }
+  }
+}

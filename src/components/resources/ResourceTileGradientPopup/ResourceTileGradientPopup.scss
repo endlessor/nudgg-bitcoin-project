@@ -1,0 +1,116 @@
+.resource-tile {
+
+  &__image-text {
+    position: relative;
+    height: 100px;
+    padding: 0 10px;
+    background-position: center center;
+
+    div.close-btn {
+      position: absolute;
+      left: 2%;
+      top: 10%;
+      cursor: pointer;
+    }
+
+    @media (min-width: $screen-md) {
+      padding: 0 60px;
+    }
+
+    //&::after {
+    //  top: 100%;
+    //  left: 50%;
+    //  border: solid transparent;
+    //  content: " ";
+    //  height: 0;
+    //  width: 0;
+    //  position: absolute;
+    //  pointer-events: none;
+    //  //border-color: rgba(136, 183, 213, 0);
+    //  border-top-color: #88b7d5;
+    //  border-width: 10px;
+    //  margin-left: -10px;
+    //}
+  }
+
+  &__content {
+    padding: 0;
+
+    p.paragraph {
+      padding: 20px 25px 60px;
+    }
+
+    div.resource-tile__btn {
+      text-align: left;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__popup {
+    @media (max-width: $screen-xs-max) {
+      $triangle-side: 11px;
+      border-radius: 0;
+      background: linear-gradient(
+        165deg,
+        rgba(121, 169, 245, 1) 0%,
+        rgba(202, 185, 207, 1) 100%
+      );
+
+      // Make image-text block higher so that visible part of it doesn't change and be 100px
+      // Change heading top style to make it be on same place as in case with 100px height
+      .resource-tile__image-text {
+        height: 100px + $triangle-side;
+
+        .heading {
+          top: calc(50% - 11px / 2)
+        }
+      }
+
+      div.close-btn {
+        line-height: 1;
+        left: 10px;
+        top: 10px;
+      }
+
+      .triangle {
+        position: relative;
+
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          bottom: 100%;
+          width: 50%;
+          box-sizing: border-box;
+        }
+
+        &:before {
+          right: 50%;
+          border-bottom: $triangle-side solid white;
+          border-right: $triangle-side solid transparent;
+        }
+
+        &:after {
+          left: 50%;
+          border-bottom: $triangle-side solid white;
+          border-left: $triangle-side solid transparent;
+        }
+      }
+
+      p.paragraph {
+        padding: 32px 20px 20px;
+        text-align: left;
+      }
+
+      .description-section,
+      div.resource-tile__btn {
+        background-color: white;
+      }
+
+      div.resource-tile__btn {
+        padding-left: 20px;
+        padding-bottom: 32px;
+      }
+    }
+  }
+}

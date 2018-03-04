@@ -1,0 +1,31 @@
+.comparison-table {
+  overflow: hidden;
+
+  &__side {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      padding-top: 140px;
+    }
+  }
+
+  &__row {
+    font-weight: 500;
+    position: relative;
+    height: 60px;
+    padding: 0 25px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &__row-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__carousel {
+    overflow: hidden;
+  }
+}

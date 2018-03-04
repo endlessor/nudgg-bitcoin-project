@@ -1,0 +1,18 @@
+.comparison-rating {
+  &__star {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url('../assets/icons/resources/star.png');
+    background-size: contain;
+    transition: .5s transform linear;
+
+    ~ .comparison-rating__star {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      transform: rotate(70deg);
+    }
+  }
+}

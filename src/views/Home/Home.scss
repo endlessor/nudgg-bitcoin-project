@@ -1,0 +1,119 @@
+.home {
+  text-align: left;
+
+// Slogan section -------------------------------
+
+  &__slogan {
+    position: relative;
+    background: linear-gradient(
+      120deg,
+      rgba(0, 113, 188, 1) 0%,
+      rgba(11, 90, 158, 1) 22.66%,
+      rgba(26, 60, 118, 1) 56.5%,
+      rgba(35, 41, 94, 1) 83.47%,
+      rgba(38, 34, 85, 1) 100%
+    );
+    background-size: cover;
+    background-position: center;
+
+    .container {
+
+      .home__content {
+        margin: 10% 0;
+
+        h1 {
+          font-size: 5em;
+          line-height: 90px;
+          @media screen and (max-width: 768px) {
+            font-size: 50px;
+          }
+        }
+
+        h2 {
+          font-size: 2.5em;
+        }
+
+        span.content-text-one {
+          width: 450px;
+          display: block;
+          margin-top: 6%;
+          font-size: larger;
+          font-weight: 400;
+          opacity: 0.5;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+        }
+
+        span.content-text-two {
+          width: 450px;
+          display: block;
+          margin-top: 3%;
+          font-size: larger;
+          font-weight: 400;
+          opacity: 0.5;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &__slogan-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    left: 0;
+  }
+
+// Features section -----------------------------
+
+  &__features {
+
+  }
+
+  &__small-features {
+    background: white;
+    text-align: center;
+  }
+
+  &__big-feature {
+    background: #EAEAEA;
+    text-align: center;
+  }
+
+  &__big-feature-section {
+    .home-section__image {
+
+      @media (min-width: $screen-md) {
+        width: 97px;
+        height: 140px;
+      }
+    }
+  }
+
+// Join section ---------------------------------
+
+  &__join {
+    text-align: center;
+    position: relative;
+    background: linear-gradient(
+      180deg,
+      rgba(38, 34, 85, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  &__join-content {
+    width: 100%;
+  }
+
+  &__join-description {
+    margin-top: 10px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+}

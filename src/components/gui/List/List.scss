@@ -1,0 +1,25 @@
+.list {
+
+  &__item {
+    ~ .list__item {
+      margin-top: 20px;
+    }
+  }
+
+// Specific modifiers ---------------------------
+
+  &--standard {
+    margin: $standard-margin 0;
+  }
+
+  &--disc {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+}
+
+ol {
+  li ~ li {
+    margin-top: 5px;
+  }
+}

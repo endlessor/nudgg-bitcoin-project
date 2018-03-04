@@ -1,0 +1,57 @@
+.resource-pros-cons {
+  $item-h: 30px;
+  $icon-size: 12px;
+
+  $tick-icon: '../assets/icons/tick-icon.svg';
+  $cross-icon: '../assets/icons/cross-icon.svg';
+
+  &__list {
+
+  }
+
+  &__list-item {
+    position: relative;
+    height: $item-h;
+    line-height: $item-h;
+    border-width: 0 10px;
+    border-style: solid;
+    border-color: transparent;
+    transition: .2s background ease-out;
+
+    ~ .resource-pros-cons__list-item {
+      border-top: 1px solid #F2F2F2;
+    }
+
+    /*
+    .body--no-touch & {
+      &:hover {
+        background: lighten($color-aquamarine-blue, 25%);
+      }
+    }
+    */
+
+    &--pros {
+      .resource-pros-cons__icon {
+        background-image: url($tick-icon);
+      }
+    }
+
+    &--cons {
+      .resource-pros-cons__icon {
+        background-image: url($cross-icon);
+      }
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    width: $icon-size;
+    height: $icon-size;
+    //transition: .3s transform linear;
+  }
+}

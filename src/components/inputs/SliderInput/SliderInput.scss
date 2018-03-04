@@ -1,0 +1,40 @@
+.slider-input {
+  $handle-size: 20px;
+
+  position: relative;
+
+  &__slider {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #E6E6E6;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    .handle {
+      cursor: pointer;
+      width: $handle-size;
+      height: $handle-size;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #86EAD7;
+      border: 0;
+      border-radius: 50%;
+    }
+  }
+
+  &.disabled {
+    .handle {
+      cursor: default;
+      pointer-events: none;
+      background: lightgray;
+
+      &:active {
+        transform: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.twitter {
+  $radius: 5px;
+
+  cursor: pointer;
+  position: relative;
+
+  &__image {
+    height: 200px;
+    background-position: top center;
+    background-size: contain;
+    background-color: white;
+  }
+
+  &__tile {
+    border-radius: $radius;
+    padding: 15px;
+
+    @media (min-width: $screen-md) {
+      padding: 20px 30px;
+    }
+  }
+
+  &__heading {
+    position: relative;
+    line-height: 1.2;
+
+    .separator {
+      display: none;
+    }
+
+    .twitter__information {
+      width: 100%;
+      overflow: hidden;
+      .avatar {
+        height: 45px;
+        width: 45px;
+        background-size: contain;
+        border-radius: 8px;
+        display: inline-block;
+        float: left;
+      }
+
+      .information {
+        margin-top: 5px;
+        display: inline-block;
+        margin-left: 10px;
+        float: left;
+      }
+    }
+  }
+
+  &__separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    height: auto;
+    width: 3px;
+
+    @media (min-width: $screen-md) {
+      width: 5px;
+    }
+  }
+
+  &__title {
+    padding: 5px 0;
+  }
+
+  &__type-section {
+    margin-top: 15px;
+
+    span {
+      p.hash-tag {
+        color: deepskyblue;
+        font-style: initial;
+        display: inline;
+        font-size: large;
+      }
+    }
+  }
+
+  &__type {
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  &__info {
+    margin-top: 15px;
+  }
+
+  &__info-date {
+    color: #000;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  &__author {
+    margin-left: 20px;
+  }
+
+  &__text {
+    display: inline-block;
+    width: 50%;
+    @media (min-width: $screen-md) {
+      display: block;
+      overflow: hidden;
+      max-height: 45px;
+      margin-top: 15px;
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+  &__article-icons {
+    margin-top: 15px;
+    display: inline-block;
+    position: absolute;
+    left: 70%;
+
+    i {
+      color: $color-base;
+    }
+
+    .fa-mail-reply:before, .fa-reply:before {
+      padding-left: 40%;
+    }
+
+    .fa-heart:before {
+      padding-left: 40%;
+    }
+  }
+}

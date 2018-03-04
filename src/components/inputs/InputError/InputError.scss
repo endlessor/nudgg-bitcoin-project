@@ -1,0 +1,14 @@
+.input-error {
+  opacity: 0;
+  color: $color-punch;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: .3s all ease-out;
+
+  &--visible {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

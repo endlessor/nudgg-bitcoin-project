@@ -1,0 +1,7 @@
+.overlay {
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+}

@@ -1,0 +1,8 @@
+.cursor {
+  width: 2px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 0 0 5px;
+  animation: cursor-blinking 1s step-end infinite;
+}

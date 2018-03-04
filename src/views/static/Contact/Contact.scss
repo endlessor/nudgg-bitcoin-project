@@ -1,0 +1,19 @@
+.contact {
+
+  &__socials {
+    margin: 20px 0;
+  }
+
+  &__social {
+    display: inline-block;
+
+    ~ .contact__social {
+      margin-left: 15px;
+    }
+  }
+
+  &__social-icon {
+    width: 22px;
+    height: 22px;
+  }
+}

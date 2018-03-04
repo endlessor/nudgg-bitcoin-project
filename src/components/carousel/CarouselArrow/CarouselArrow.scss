@@ -1,0 +1,13 @@
+.carousel-arrow {
+  cursor: pointer;
+
+// Specific modifiers ---------------------------
+
+  &--left-arrow {
+    left: 0;
+  }
+
+  &--right-arrow {
+    right: 0;
+  }
+}

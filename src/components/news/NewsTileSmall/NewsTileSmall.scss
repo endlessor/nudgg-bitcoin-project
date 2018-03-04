@@ -1,0 +1,21 @@
+.news-tile-sm {
+  @media (min-width: $screen-sm) {
+    &:first-child {
+      padding-right: 5px;
+    }
+    &:last-child {
+      padding-left: 5px;
+    }
+  }
+  .news-tile {
+    &__tile {
+      @media (min-width: $screen-sm) {
+        margin: -135px 20px 0;
+      }
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+}

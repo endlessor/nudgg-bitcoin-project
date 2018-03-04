@@ -1,0 +1,25 @@
+.goal-tile {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .3s transform ease-out;
+
+  &__image {
+    width: 100%;
+    height: 170px !important;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__title {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+// Specific modifiers ---------------------------
+
+  &--active {
+  }
+}

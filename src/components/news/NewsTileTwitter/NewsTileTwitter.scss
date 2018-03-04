@@ -1,0 +1,59 @@
+.news-tile-twitter {
+  $radius: 15px;
+
+  .news-tile {
+    height: 190px;
+
+    &__image,
+    &__tile {
+      @media (min-width: $screen-md) {
+        vertical-align: top;
+      }
+    }
+
+    &__image {
+      @media (min-width: $screen-md) {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &__tile {
+      @media (min-width: $screen-md) {
+        width: 100%;
+        margin: 0;
+        border-radius: 0 $radius $radius 0;
+      }
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+}
+
+.news-twitter {
+  &__container {
+    height: 1000px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    overflow-y: scroll;
+    @media (max-width: $screen-sm) {
+      height: auto;
+    }
+    .news__tile {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__fade {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, $color-body 100%);
+  }
+}

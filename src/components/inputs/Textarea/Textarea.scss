@@ -1,0 +1,15 @@
+.textarea {
+  .input {
+    &__field {
+      border: none;
+      resize: none;
+      height: 115px;
+      line-height: 1.5 !important;
+    }
+
+    &__label {
+      top: 0;
+      transform: none;
+    }
+  }
+}

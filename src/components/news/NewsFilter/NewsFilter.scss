@@ -1,0 +1,108 @@
+.news-filter {
+  $size: 35px;
+
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: $size;
+  line-height: $size;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 0 40px 0 20px;
+  background: rgba(255, 255, 255, .1);
+
+  &__title {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    border-radius: 20px;
+    opacity: 0;
+    transition: .3s opacity ease-out;
+  }
+
+  &.type-Credit.Cards {
+    &::before {
+      @include transparentGradient($color-credit-cards);
+    }
+  }
+
+  &.type-Cash.ISA’s {
+    &::before {
+      @include transparentGradient($color-cash-isa);
+    }
+  }
+
+  &.type-Investments {
+    &::before {
+      @include transparentGradient($color-investments);
+    }
+  }
+
+  &.type-Robo.Advisors {
+    &::before {
+      @include transparentGradient($color-robo-advisors);
+    }
+  }
+
+  &.type-funding {
+    &::before {
+      @include transparentGradient($color-funding);
+    }
+  }
+
+  &.type-Savings {
+    &::before {
+      @include transparentGradient($color-savings);
+    }
+  }
+
+  &.type-Money {
+    &::before {
+      @include transparentGradient($color-money);
+    }
+  }
+
+  &.type-Home {
+    &::before {
+      @include transparentGradient($color-home);
+    }
+  }
+
+  &--active {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &--disabled {
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .body--no-touch & {
+    &:hover {
+      &:not(&--active)::before {
+        opacity: .4;
+      }
+    }
+  }
+}

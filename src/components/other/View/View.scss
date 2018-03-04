@@ -1,0 +1,12 @@
+.view {
+  min-height: calc(100vh - #{$header-height});
+
+  &--blue {
+    background: $color-blue-zodiac;
+    padding: 25px 0;
+
+    @media (min-width: $screen-sm) {
+      padding: 70px 0;
+    }
+  }
+}

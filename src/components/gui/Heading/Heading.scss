@@ -1,0 +1,56 @@
+.heading {
+  font-family: 'Nexa Bold', sans-serif;
+
+// Size modifiers -------------------------------
+
+  &--size-1 {
+    font-size: 30px;
+    line-height: 1;
+
+    @media (min-width: $screen-sm) {
+      font-size: 36px;
+    }
+  }
+
+  &--size-2 {
+    font-size: 25px;
+    line-height: 1.2;
+
+    @media (min-width: $screen-sm) {
+      font-size: 30px;
+    }
+  }
+
+  &--size-3 {
+    font-size: 20px;
+    line-height: 1.4;
+
+    @media (min-width: $screen-sm) {
+      font-size: 25px;
+    }
+  }
+
+  &--size-4 {
+    font-size: 16px;
+
+    @media (min-width: $screen-sm) {
+      font-size: 20px;
+    }
+  }
+
+  &--size-5 {
+    font-size: 14px;
+
+    @media (min-width: $screen-sm) {
+      font-size: 16px;
+    }
+  }
+
+  &--size-6 { font-size: 14px; }
+
+// Specific modifiers ---------------------------
+
+  &--standard {
+    margin-bottom: $standard-margin;
+  }
+}

@@ -1,0 +1,11 @@
+.hero-image {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+  }
+}

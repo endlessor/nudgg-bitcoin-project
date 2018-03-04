@@ -1,0 +1,30 @@
+$font-path: '/assets/fonts';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(#{$font-path}/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: medium;
+  src: url(#{$font-path}/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  src: url(#{$font-path}/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: medium;
+  src: url(#{$font-path}/roboto/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url(#{$font-path}/nexa/NexaBold.otf);
+}

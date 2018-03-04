@@ -1,0 +1,49 @@
+.partners {
+  margin: 45px 0;
+
+  @media (min-width: $screen-sm) {
+    margin: 95px 0 75px;
+  }
+
+  @media (min-width: $screen-md) {
+    margin: 135px 0 110px;
+  }
+
+  &__search {
+    margin-top: 20px;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 100px;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: 50px;
+    }
+  }
+
+  &__partner-types {
+    margin-top: 50px;
+
+    .nica-carousel__slide {
+      text-align: center;
+
+      @media (min-width: $screen-md) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__partner-title {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+
+    ~ .partners__partner-title {
+      margin-left: 30px;
+    }
+  }
+
+  &__carousel {
+    margin-top: 40px;
+  }
+}

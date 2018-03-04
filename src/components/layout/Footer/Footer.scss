@@ -1,0 +1,88 @@
+.footer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 660px;
+  background: $color-shark;
+
+  @media (min-width: $screen-sm) {
+    min-height: 310px;
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 55px;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 85px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &__logo {
+    @media (min-width: $screen-sm) {
+      margin-top: 25px;
+    }
+  }
+
+  &__site-map {
+    margin-top: 45px;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 0;
+      overflow: hidden;
+    }
+  }
+
+  &__list {
+    ~ .footer__list {
+      margin-top: 40px;
+
+      @media (min-width: $screen-sm) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__list-item {
+    ~ .footer__list-item {
+      margin-top: 8px;
+    }
+  }
+
+  &__list-link {
+    color: white;
+    //font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__socials {
+    margin-top: 40px;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 35px;
+    }
+  }
+
+  &__socials-item {
+    float: left;
+    transition: .3s transform linear;
+    @include will-transform();
+
+    ~ .footer__socials-item {
+      margin-left: 25px;
+    }
+
+    .body--no-touch & {
+      &:hover {
+        transform: rotate(25deg);
+      }
+    }
+  }
+
+  &__socials-image {
+    width: 22px;
+    height: 22px;
+  }
+}

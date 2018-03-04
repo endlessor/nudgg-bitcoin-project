@@ -1,0 +1,59 @@
+.link {
+  cursor: pointer;
+  color: $color-base;
+  transition: .3s all ease-in;
+  word-break: break-all;
+
+// Specific modifiers ---------------------------
+
+  &--standard {
+    display: block;
+    margin-bottom: $standard-margin;
+  }
+
+  &--underline {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transition: .3s ease-in background;
+    }
+  }
+
+// Color modifiers ------------------------------
+
+  &--color-aqua {
+    color: $color-aquamarine-blue;
+
+    &::after {
+      @include transparentGradient($color-aquamarine-blue);
+    }
+
+    .body--no-touch & {
+      &:hover {
+        color: $color-dark-aquamarine-blue;
+      }
+    }
+  }
+
+  &--color-white {
+    &::after {
+      background: linear-gradient(
+        to right,
+        white 0%,
+        transparent 100%
+      );
+    }
+
+    .body--no-touch & {
+      &:hover {
+        color: #e9e9e9;
+      }
+    }
+  }
+}

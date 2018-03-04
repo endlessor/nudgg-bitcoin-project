@@ -1,0 +1,26 @@
+.hub-accounts {
+  position: relative;
+
+  &__tile {
+    padding: 35px 15px;
+    border-radius: 8px;
+  }
+
+  &__titles {
+    text-align: center;
+  }
+
+  &__sub-title {
+    color: rgba(48, 57, 96, .55);
+  }
+
+  &__btn-connect {
+    margin-top: 25px;
+  }
+
+  &__exit {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+}

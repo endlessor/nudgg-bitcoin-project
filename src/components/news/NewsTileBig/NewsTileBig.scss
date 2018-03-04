@@ -1,0 +1,39 @@
+.news-tile-big {
+  @media (min-width: $screen-md) {
+    margin-bottom: 85px;
+  }
+
+  .news-tile {
+    &__image {
+      @media (min-width: $screen-md) {
+        width: 65%;
+        height: 315px;
+      }
+    }
+
+    &__tile {
+      @media (min-width: $screen-md) {
+        width: 85%;
+        max-height: 300px;
+        position: absolute;
+        z-index: 2;
+        top: 95px;
+        right: 0;
+        margin: 0;
+      }
+    }
+
+    &__text {
+      @media (min-width: $screen-md) {
+        max-height: 106px;
+        overflow: hidden;
+      }
+    }
+
+    &__heading {
+      @media (min-width: $screen-md) {
+        //padding-left: 40px;
+      }
+    }
+  }
+}

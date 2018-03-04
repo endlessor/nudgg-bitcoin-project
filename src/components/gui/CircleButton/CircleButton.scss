@@ -1,0 +1,13 @@
+.circle-button {
+  $size: 20px;
+
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+
+  &--arrow {
+    border-color: white;
+  }
+}

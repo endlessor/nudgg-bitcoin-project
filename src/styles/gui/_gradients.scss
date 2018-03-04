@@ -1,0 +1,119 @@
+.blue-gradient {
+  background: linear-gradient(
+    120deg,
+    rgba(0, 113, 188, 1) 0%,
+    rgba(11, 90, 158, 1) 22.66%,
+    rgba(26, 60, 118, 1) 56.5%,
+    rgba(35, 41, 94, 1) 83.47%,
+    rgba(38, 34, 85, 1) 100%
+  );
+}
+
+.carousel-gradient {
+  background-image: linear-gradient(
+    165deg,
+    rgba(152, 206, 255, 1) 0%,
+    rgba(255, 185, 160, 1) 100%
+  );
+
+  &__investments {
+    &,
+    .faq-gradient {
+      background-image: linear-gradient(
+        172deg,
+        rgba(134,207,239,1) 0%,
+        rgba(244,255,255,1) 100%
+      );
+    }
+
+    @media (max-width: $screen-xs-max) {
+      .resource-tile__popup {
+        background-image: linear-gradient(
+          172deg,
+          rgba(134,207,239,1) 0%,
+          rgba(244,255,255,1) 100%
+        );
+      }
+    }
+  }
+
+  &__isa-lisa {
+    &,
+    .faq-gradient {
+      background-image: linear-gradient(
+        175deg,
+        rgba(210,198,236,1) 0%,
+        rgba(232,229,234,1) 100%
+      );
+    }
+
+    @media (max-width: $screen-xs-max) {
+      .resource-tile__popup {
+        background-image: linear-gradient(
+          175deg,
+          rgba(210,198,236,1) 0%,
+          rgba(232,229,234,1) 100%
+        );
+      }
+    }
+  }
+
+  &__cash-savings {
+    &,
+    .faq-gradient {
+      background-image: linear-gradient(
+        349deg,
+        rgba(245,225,186,1) 0%,
+        rgba(251,157,75,1) 100%
+      );
+    }
+
+    @media (max-width: $screen-xs-max) {
+      .resource-tile__popup {
+        background-image: linear-gradient(
+          349deg,
+          rgba(245,225,186,1) 0%,
+          rgba(251,157,75,1) 100%
+        );
+      }
+    }
+  }
+
+  padding-bottom: 50px;
+  background-position: center 65px;
+}
+
+.resources-provider .carousel-gradient {
+  &__investments {
+    background-image: linear-gradient(
+      347deg,
+      rgba(134,207,239,1) 0%,
+      rgba(244,255,255,1) 100%
+    );
+  }
+
+  &__isa-lisa {
+    background-image: linear-gradient(
+      163deg,
+      rgba(210,198,236,1) 0%,
+      rgba(232,229,234,1) 100%
+    );
+  }
+
+  &__cash-savings {
+    background-image: linear-gradient(
+      181deg,
+      rgba(245,225,186,1) 0%,
+      rgba(251,157,75,1) 100%
+    );
+  }
+}
+
+//
+//.faq-gradient {
+//  background: linear-gradient(
+//    165deg,
+//    rgba(121, 169, 245, 1) 0%,
+//    rgba(202, 185, 207, 1) 100%
+//  );
+//}

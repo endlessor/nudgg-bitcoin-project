@@ -1,0 +1,13 @@
+.hub-no-goal {
+  background: #d1d1d1;
+  position: relative;
+
+  &__btn-create {
+    max-width: 180px;
+    margin: 0 auto;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 0;
+    }
+  }
+}

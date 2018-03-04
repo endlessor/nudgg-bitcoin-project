@@ -1,0 +1,41 @@
+.sign-up {
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-sm) {
+    margin-bottom: 75px;
+  }
+
+// Common ---------------------------------------
+
+  &__hero-image {
+    height: 135px;
+    margin-bottom: 40px;
+    background-image: url('/assets/images/sign-up/sample-hero.jpg');
+
+    @media (min-width: $screen-sm) {
+      height: 210px;
+    }
+  }
+
+// Other ----------------------------------------
+
+  &__group {
+    ~ .sign-up__group {
+      margin-top: 40px;
+    }
+  }
+
+  &__password-description {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  &__terms-checkbox {
+    margin-top: 30px;
+  }
+
+  &__btn-submit {
+    max-width: 180px;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,49 @@
+.desktop-navigation {
+  display: none;
+
+  @media (min-width: $screen-sm) {
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px 0 0 45px;
+  }
+
+  &__item {
+    float: left;
+
+    ~ .desktop-navigation__item {
+      margin-left: 25px;
+    }
+  }
+
+  &__item-link {
+    position: relative;
+    color: $color-rhino;
+    text-transform: uppercase;
+    font-family: 'Nexa', sans-serif;
+    font-weight: 700;
+    padding: 0 2px;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 0;
+      height: 2px;
+      background: $color-rhino;
+      transition: width .5s $easeInOutBack;
+    }
+
+    .body--no-touch & {
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    &.nav-link-active {
+      &::after {
+       width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.faq {
+  user-select: none;
+
+  &__heading {
+    position: relative;
+  }
+
+  &__title {
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: rotate(90deg);
+    transition: .3s transform ease-in;
+  }
+
+  &__content {
+
+  }
+
+  &--visible {
+    .faq__icon {
+      transform: rotate(-90deg);
+    }
+  }
+}

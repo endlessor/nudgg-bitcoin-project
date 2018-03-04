@@ -1,0 +1,9 @@
+.body {
+  &--no-touch {
+
+  }
+
+  &--modal-open {
+    overflow: hidden;
+  }
+}

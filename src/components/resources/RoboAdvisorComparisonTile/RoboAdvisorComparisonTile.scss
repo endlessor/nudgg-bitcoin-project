@@ -1,0 +1,100 @@
+.comparison-tile {
+  $radius: 7px;
+
+  width: 100%;
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  background: white;
+  border-radius: $radius $radius 0 0;
+
+  @media (min-width: $screen-sm) {
+    //max-width: 230px;
+    text-align: center;
+  }
+
+  &__highlight {
+    color: $color-aquamarine-blue;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  &__sub {
+    color: #D3D3D3;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  &__row {
+    position: relative;
+    height: 45px;
+    padding: 0 25px;
+
+    ~ .comparison-tile__row {
+      border-top: 1px solid #e6e6e6;
+    }
+
+    @media (min-width: $screen-sm) {
+      height: 60px;
+    }
+  }
+
+  &__heading {
+    height: 140px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
+  &__rating,
+  &__rating-text{
+    margin-top: 10px;
+  }
+
+  &__row-title,
+  &__row-value {
+    float: left;
+    line-height: 1.2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__row-title {
+    width: 60%;
+    z-index: 98;
+    left: 25px;
+
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__row-value {
+    width: 35%;
+    z-index: 97;
+    right: 25px;
+    text-align: center;
+    padding-left: 5%;
+
+    @media (min-width: $screen-sm) {
+      float: none;
+      width: 100%;
+      right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__btn {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 0 $radius $radius;
+  }
+}

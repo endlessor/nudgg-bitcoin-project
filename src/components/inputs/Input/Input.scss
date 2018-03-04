@@ -1,0 +1,148 @@
+.input {
+  $height: 40px;
+  $side-padding: 4px;
+
+  ~ .input {
+    margin-top: 15px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__field {
+    color: $color-rhino;
+    width: 100%;
+    height: $height;
+    line-height: $height;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    padding-left: $side-padding;
+
+    &:focus {
+      outline: none;
+      color: $color-pelorous;
+
+      ~ .input {
+        &__label {
+          color: $color-pelorous;
+        }
+
+        &__line {
+          @include transparentGradient($color-pelorous);
+        }
+      }
+    }
+  }
+
+  &__label,
+  &__line {
+    pointer-events: none;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 300;
+    color: $color-silver-chalice;
+    transition: .3s linear all;
+    padding-left: $side-padding;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    @include transparentGradient($color-silver-chalice);
+    transition: .3s background ease-out;
+  }
+
+  &__error {
+    padding-left: $side-padding;
+  }
+
+  &--has-value {
+    .input {
+      &__field {
+        color: $color-rhino;
+
+        &:focus {
+          ~ .input {
+            &__line {
+              @include transparentGradient($color-rhino);
+            }
+          }
+        }
+      }
+
+      &__label {
+        opacity: 0;
+      }
+
+      &__line {
+        @include transparentGradient($color-rhino);
+      }
+    }
+  }
+
+  // Modifiers
+
+  &--white {
+    .input {
+      &__field {
+        color: white;
+      }
+
+      &__label {
+        color: white;
+      }
+
+      &__line {
+        @include transparentGradient(white);
+      }
+    }
+  }
+
+  &--has-error {
+    .input {
+      &__field {
+        color: $color-punch;
+
+        &:focus {
+          ~ .input {
+            &__label {
+              color: $color-punch;
+            }
+
+            &__line {
+              @include transparentGradient($color-punch);
+            }
+          }
+        }
+      }
+
+      &__label {
+        color: $color-punch;
+        // opacity: 0;
+      }
+
+      &__line {
+        @include transparentGradient($color-punch);
+      }
+    }
+  }
+
+  &--show-label {
+    .input {
+      &__field {
+        padding-left: 20px;
+      }
+
+      &__label {
+        opacity: 1;
+      }
+    }
+  }
+}

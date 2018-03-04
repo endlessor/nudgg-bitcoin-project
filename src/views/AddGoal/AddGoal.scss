@@ -1,0 +1,44 @@
+.add-goal {
+  padding-bottom: 80px;
+
+  &__hero-image {
+    .image {
+      height: 120px;
+
+      @media (min-width: $screen-sm) {
+        height: 170px;
+      }
+    }
+  }
+
+  &__details {
+    color: #B0B0B0;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  &__details-amount {
+    font-weight: bold;
+  }
+
+  &__content {
+    margin-top: 40px;
+  }
+
+  &__buttons {
+    margin-top: 50px;
+  }
+
+  &__left-button {
+    float: left;
+  }
+
+  &__right-button {
+    float: right;
+  }
+
+  .submit {
+    width: 175px;
+    margin-top: 0;
+  }
+}

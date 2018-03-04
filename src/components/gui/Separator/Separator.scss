@@ -1,0 +1,23 @@
+.separator {
+  width: 100%;
+  max-width: 100%;
+  height: 2px;
+  background: $color-rhino;
+
+// Specific modifiers ---------------------------
+
+  &--vertical {
+    width: 2px;
+    height: 100%;
+  }
+
+// Background modifiers -------------------------
+
+  &--bg-white {
+    background: white;
+  }
+
+  &--bg-grey {
+    background: rgba(0, 0, 0, .18);
+  }
+}

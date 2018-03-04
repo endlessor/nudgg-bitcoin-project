@@ -1,0 +1,72 @@
+// TODO: Come back and fix the gradient background
+
+.checkbox {
+  $size: 22px;
+
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  &__input-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $size;
+    height: $size;
+    border: 2px solid $color-base;
+    transition: .3s ease-out all;
+  }
+
+  &__input {
+    display: none;
+    appearance: none;
+  }
+
+  &__tick {
+    width: 13px;
+    height: 9px;
+    opacity: 0;
+    transition: .3s ease-out opacity;
+  }
+
+  &__label {
+    font-size: 14px;
+    padding-left: 40px;
+  }
+
+  &__error {
+    margin: 10px 0 0 40px;
+  }
+
+  &--checked {
+    .checkbox {
+      &__input-container {
+        background: $color-base;
+      }
+
+      &__tick {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--has-error {
+    .checkbox__input-container {
+      border-color: $color-punch;
+    }
+  }
+
+// Modifiers
+
+  &--white {
+    .checkbox {
+      &__input-container {
+        border-color: white;
+      }
+
+      &__label {
+        color: white;
+      }
+    }
+  }
+}

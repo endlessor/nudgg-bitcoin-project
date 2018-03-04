@@ -1,0 +1,110 @@
+.button,
+.heading,
+.image,
+.link,
+.list,
+.paragraph {
+
+// Display modifiers ----------------------------
+
+  &--inline {
+    display: inline;
+  }
+
+  &--inline-block {
+    display: inline-block;
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--pad-bottom {
+    margin-bottom: $standard-margin;
+  }
+
+  //&--standard {
+  //  margin-top: $standard-margin;
+  //}
+  //&--standard {
+  //  margin-bottom: $standard-margin;
+  //}
+
+  &--pos-center {
+    //margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+// Font modifiers -------------------------------
+
+  &--font-uppercase {
+    text-transform: uppercase;
+  }
+
+  &--font-italic {
+    font-style: italic;
+  }
+
+  &--font-light {
+    font-weight: 300;
+  }
+
+  &--font-normal {
+    font-weight: normal;
+  }
+
+  &--font-medium {
+    font-weight: 500;
+  }
+
+  &--font-semi-bold {
+    font-weight: 600;
+  }
+
+  &--font-bold {
+    font-weight: 700;
+  }
+
+  &--font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &--font-nexa {
+    font-family: 'Nexa Bold', sans-serif;
+  }
+
+  &--text-center {
+    text-align: center;
+  }
+
+// Color modifiers ------------------------------
+
+  &--color-white {
+    color: white;
+  }
+}
+
+.image,
+.link {
+  &--pos-center {
+    display: block;
+  }
+}
+
+.scale-hover {
+  $scale-value: 1.02;
+
+  transition: .2s ease-in transform;
+  @include will-transform();
+
+  .body--no-touch & {
+    &:hover {
+      transform: scale($scale-value, $scale-value);
+    }
+  }
+}
+
+.lowercase {
+  text-transform: lowercase;
+}

@@ -1,0 +1,17 @@
+.home-section {
+  padding: 60px 0;
+
+  &__image {
+    height: 100px;
+  }
+
+  &__title {
+    min-height: 40px;
+  }
+
+  &__description {
+    font-size: 16px;
+    max-width: 325px;
+    margin: 10px auto 0;
+  }
+}

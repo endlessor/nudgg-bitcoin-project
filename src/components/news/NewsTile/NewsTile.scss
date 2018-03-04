@@ -1,0 +1,79 @@
+.news-tile {
+  $radius: 5px;
+
+  cursor: pointer;
+  position: relative;
+
+  &__image {
+    height: 200px;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  &__tile {
+    margin: -85px 8px 0;
+    border-radius: $radius;
+    padding: 16px 15px 25px;
+
+    @media (min-width: $screen-md) {
+      padding: 20px 30px;
+    }
+  }
+
+  &__heading {
+    position: relative;
+    line-height: 1.2;
+    padding-left: 20px;
+  }
+
+  &__separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    height: auto;
+    width: 3px;
+
+    @media (min-width: $screen-md) {
+      width: 5px;
+    }
+  }
+
+  &__title {
+    padding: 5px 0;
+  }
+
+  &__type-section {
+    margin-top: 15px;
+  }
+
+  &__type {
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  &__info {
+    margin-top: 15px;
+  }
+
+  &__info-date {
+    color: #000;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  &__author {
+    margin-left: 20px;
+  }
+
+  &__text {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      overflow: hidden;
+      max-height: 45px;
+      margin-top: 15px;
+    }
+  }
+}

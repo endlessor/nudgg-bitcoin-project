@@ -1,0 +1,45 @@
+.partner-tile {
+  $radius: 5px;
+  $button-h: 43px;
+
+  text-align: center;
+
+  &__tile {
+    border-radius: $radius $radius 0 0;
+  }
+
+  &__content {
+    padding: 20px 15px 50px;
+  }
+
+  &__image {
+    max-width: 100%;
+    width: auto;
+    height: 50px;
+    margin: 0 auto;
+    background-size: contain;
+    background-size: auto 50%;
+  }
+
+  &__review {
+    margin-top: 20px;
+  }
+
+  &__description {
+    margin-top: 20px;
+  }
+
+  &__button {
+    height: $button-h;
+    line-height: $button-h;
+    border-radius: 0 0 $radius $radius;
+  }
+
+  &__bottom {
+    margin: 10px auto 0;
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+}

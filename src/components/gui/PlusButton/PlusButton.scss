@@ -1,0 +1,46 @@
+.plus-button {
+  $icon-size: 12px;
+  $icon-line-size: 2px;
+
+  cursor: pointer;
+  color: $color-aquamarine-blue;
+  text-align: center;
+
+  &__icon,
+  &__text {
+    display: inline-block;
+  }
+
+  &__icon {
+    width: $icon-size;
+    height: $icon-size;
+
+    &::after,
+    &::before {
+      background: $color-aquamarine-blue;
+    }
+
+    &::after {
+      height: $icon-line-size;
+    }
+
+    &::before {
+      width: $icon-line-size;
+    }
+  }
+
+  &--disabled {
+    color: $color-silver-chalice;
+    user-select: none;
+    @include disabled();
+    .icon::before, .icon::after {
+      background: $color-silver-chalice;
+      color: $color-silver-chalice;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    margin-left: 10px;
+  }
+}

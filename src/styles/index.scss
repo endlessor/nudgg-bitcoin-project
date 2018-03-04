@@ -1,0 +1,21 @@
+// Normalize rules
+@import 'vendor/_sanitize.css';
+
+// Helpers
+@import 'helpers/*';
+
+// GUI
+@import 'gui/*';
+
+// Vendor styles
+@import 'vendor/*';
+
+// Base rules
+@import 'base/*';
+
+// Components, layouts & views
+@import '../components/**/**/*.scss';
+@import '../layouts/**/*.scss';
+@import '../views/**/**/*.scss';
+
+@import 'components/*';

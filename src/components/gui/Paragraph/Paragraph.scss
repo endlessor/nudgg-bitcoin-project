@@ -1,0 +1,15 @@
+.paragraph {
+  + .paragraph {
+    margin-top: 15px;
+  }
+
+// Specific modifiers ---------------------------
+
+  &--standard {
+    margin-bottom: $standard-margin;
+
+    + .paragraph {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.hub-amount {
+  color: white;
+
+  &__title,
+  &__amount {
+    color: inherit;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm) {
+      width: 49%;
+      display: inline-block;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__amount {
+    font-size: 20px;
+
+    @media (min-width: $screen-sm) {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.popup {
+  $container-size: 35px;
+
+  &__tile {
+    min-height: 100px;
+    position: relative;
+  }
+
+  &__icon-container {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: $container-size;
+    height: $container-size;
+    background: white;
+    transition: .3s background ease-out;
+
+    .body--no-touch & {
+      &:hover {
+        background: $color-gallery;
+
+        .popup__icon {
+          transform:
+            rotate(90deg)
+            translate(-50%, 50%);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    transition: .3s transform ease-out;
+  }
+}

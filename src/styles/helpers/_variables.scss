@@ -1,0 +1,7 @@
+$header-height: 65px;
+$standard-margin: 25px;
+
+$window-height-full: 100vh;
+$window-height-min: 450px;
+$window-height: calc(100vh - #{$header-height});
+$window-height-d: calc(100vh - #{$header-height * 2});

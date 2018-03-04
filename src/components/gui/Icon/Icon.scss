@@ -1,0 +1,126 @@
+.icon {
+  $icon-size: 20px;
+  $icon-size-sm: 8px;
+
+  $icon-cross: '../assets/icons/cross-icon.svg';
+  $icon-cross-white: '../assets/icons/cross-white-icon.svg';
+  $icon-tick: '../assets/icons/tick-icon-white.svg';
+  $icon-left-arrow: '../assets/icons/left-arrow.svg';
+  $icon-right-arrow: '../assets/icons/right-arrow.svg';
+  $icon-right-arrow-white: '../assets/icons/right-arrow-white.svg';
+
+  //position: relative;
+  width: $icon-size;
+  height: $icon-size;
+
+// Specific modifiers ---------------------------
+
+  &--small {
+    width: $icon-size-sm;
+    height: $icon-size-sm;
+  }
+
+// Arrow types ----------------------------------
+
+  &--cross {
+    background-image: url($icon-cross);
+  }
+  
+  &--cross-white {
+    $size: 15px;
+
+    background-image: url($icon-cross-white);
+    width: $size;
+    height: $size;
+  }
+
+  &--left-arrow,
+  &--right-arrow {
+    width: 10px;
+    height: 18px;
+  }
+
+  &--left-arrow {
+    background-image: url($icon-left-arrow);
+  }
+
+  &--right-arrow {
+    background-image: url($icon-right-arrow);
+  }
+
+  &--plus {
+    $size-a: 100%;
+    $size-b: 1px;
+
+    position: relative;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+    }
+
+    &::after {
+      width: $size-a;
+      height: $size-b;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      width: $size-b;
+      height: $size-a;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--tick {
+    background-image: url($icon-tick);
+  }
+
+  &--right-arrow-white {
+    background-image: url($icon-right-arrow-white);
+  }
+
+  &--green-cross {
+    $size: 12px;
+    $line-size: 2px;
+
+    cursor: pointer;
+    width: $size;
+    height: $size;
+    transform: rotate(45deg);
+
+    &::after,
+    &::before {
+      background: $color-aquamarine-blue;
+    }
+
+    &::after {
+      height: $line-size;
+    }
+
+    &::before {
+      width: $line-size;
+    }
+  }
+
+// Comparison
+  &--comparison-yes,
+  &--comparison-no {
+    width: 15px;
+    height: 16px;
+  }
+
+  &--comparison-yes {
+    background-image: url('../assets/icons/comparison/tick.png');
+  }
+
+  &--comparison-no {
+    background-image: url('../assets/icons/comparison/cross.png');
+  }
+}

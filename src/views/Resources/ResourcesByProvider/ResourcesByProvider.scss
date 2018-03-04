@@ -1,0 +1,75 @@
+.resources-provider {
+
+  div.container.overflow-hidden {
+    width: 100%;
+
+    .gradient-popup {
+      width: 60%;
+
+      @media (max-width: $screen-xs-max) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 10000;
+      }
+    }
+  }
+  &__section {
+    margin-top: 40px;
+  }
+
+  &__pros-cons {
+    @media (min-width: $screen-md) {
+      margin-top: 90px;
+    }
+  }
+
+  &__btn-help {
+    margin: 30px auto 0;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 0;
+    }
+  }
+
+  &__carousel {
+    margin-top: 50px;
+    .container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      @media (max-width: $screen-xs) {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  &__table {
+    margin: 30px 0;
+    .comparison-table.container {
+      .comparison-table__carousel.col-sm-10 {
+        .carousel-slider {
+          .nica-carousel {
+            .nica-carousel__frame {
+              .nica-carousel__list {
+                .nica-carousel__slide.nica-carousel__slide {
+                  .comparison-tile {
+                    .comparison-tile__row.comparison-tile__heading {
+                      .image.comparison-tile__image {
+                        height: 45px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.hub-breakdown {
+  text-align: center;
+
+  &__tile {
+    padding: 35px 15px;
+    border-radius: 8px;
+  }
+
+  &__logo {
+    width: auto;
+    height: 50px;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-sm) {
+      height: 40px;
+    }
+  }
+
+  &__total-amount {
+    font-size: 16px;
+    font-weight: 600;
+
+    @media (min-width: $screen-sm) {
+      font-size: 25px;
+    }
+  }
+
+  &__account-type {
+    @media (min-width: $screen-sm) {
+      margin-top: 2px;
+    }
+  }
+
+  &__details {
+    color: #B0B0B0;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 5px;
+  }
+
+  &__back {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    height: 12px;
+  }
+
+  .hub-table__wrapper {
+    width: 100%;
+  }
+
+  .hub-table-row {
+    height: 70px;
+  }
+
+  &__summary {
+    text-align: center;
+
+    @media (min-width: $screen-sm) {
+      text-align: left;
+    }
+  }
+}
+
+.hub-tile-fixed {
+  height: 540px;
+  overflow-y: scroll;
+}

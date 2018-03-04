@@ -1,0 +1,12 @@
+.sign-up-success {
+  margin-bottom: 100px;
+
+  &__btn-goal {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 0;
+    }
+  }
+}

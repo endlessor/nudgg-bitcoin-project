@@ -1,0 +1,23 @@
+.news-tile-popup {
+  $image-h: 200px;
+
+  .news-tile {
+    &__tile {
+      margin: 0;
+      border-radius: 0;
+      overflow-y: scroll;
+      max-height: calc(#{$window-height-full} - #{$image-h});
+
+      @media (min-width: $screen-xs) {
+        max-height: calc(#{$window-height-d} - #{$image-h});
+      }
+    }
+
+    &__text {
+      display: block;
+      margin-top: 15px;
+      max-height: initial;
+      overflow: visible;
+    }
+  }
+}

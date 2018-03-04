@@ -1,0 +1,10 @@
+.idea
+/dist
+/node_modules
+npm-debug.log
+coverage
+<<<<<<< HEAD
+.DS_Store
+=======
+.DS_Store
+>>>>>>> b766fc8ad79ef5632a2f8b2e930ba43c220efe01

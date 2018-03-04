@@ -1,0 +1,116 @@
+.button {
+  $height: 35px;
+  $height-small: 25px;
+
+  cursor: pointer;
+  font-size: 14px;
+  color: $color-rhino;
+  width: 100%;
+  height: $height;
+  line-height: $height;
+  text-align: center;
+  background: transparent;
+  transition: .3s color ease-in,
+              .3s background ease-in;
+
+// Specific modifiers ---------------------------
+
+  &--standard {
+    margin-top: $standard-margin;
+  }
+
+  &--small {
+    height: $height-small;
+    line-height: $height-small;
+  }
+
+  &--fixed-width {
+    max-width: 260px;
+  }
+
+  &--with-border {
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  &--text-left {
+    text-align: left;
+  }
+
+// Color modifiers ------------------------------
+
+  &--color-white {
+    color: white;
+
+    .body--no-touch & {
+      &:hover {
+        color: darken(white, 10%);
+      }
+    }
+  }
+
+  &--color-aqua {
+    color: $color-aquamarine-blue;
+
+    .body--no-touch & {
+      &:hover {
+        color: $color-dark-aquamarine-blue;
+      }
+    }
+  }
+
+// Background modifiers -------------------------
+
+  &--bg-white {
+    color: #161616;
+    background: white;
+
+    .body--no-touch & {
+      &:hover {
+        background: lightgrey;
+      }
+    }
+  }
+
+  &--bg-aqua {
+    color: white;
+    background: $color-aquamarine-blue;
+
+    .body--no-touch & {
+      &:hover {
+        background: $color-dark-aquamarine-blue;
+      }
+    }
+  }
+
+  &--bg-orange {
+    color: black;
+    background: $color-texas-rose;
+
+    .body--no-touch & {
+      &:hover {
+        background: lighten($color-texas-rose, 15%);
+      }
+    }
+  }
+
+  &--bg-red {
+    color: white;
+    background: $color-sunset-orange;
+
+    .body--no-touch & {
+      &:hover {
+        background: $color-bright-red;
+      }
+    }
+  }
+
+// Default modifiers ----------------------------
+
+  &--disabled {
+    color: $color-silver-chalice;
+    background: $color-gallery;
+    user-select: none;
+    @include disabled();
+  }
+}

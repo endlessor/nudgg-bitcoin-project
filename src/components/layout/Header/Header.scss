@@ -1,0 +1,67 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: $header-height;
+  background: white;
+  border-bottom: 1px solid $color-concrete;
+
+  &__container {
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 0;
+    }
+  }
+
+// Buttons --------------------------------------
+
+  &__buttons {
+    float: right;
+    max-width: 180px;
+  }
+
+  &__btn-login,
+  &__btn-sign-up {
+    width: 90px;
+    display: inline-block;
+  }
+
+  &__btn-login {
+
+  }
+
+  &__btn-sign-up {
+
+  }
+
+// User details ---------------------------------
+
+  &__user-details {
+    float: right;
+    font-size: 14px;
+    color: $color-rhino-secondary;
+  }
+
+  &__user-name {
+    font-weight: 600;
+  }
+
+  &__user-logout {
+    display: none;
+    margin-left: 15px;
+
+    @media (min-width: $screen-sm) {
+      display: inline;
+    }
+  }
+}
